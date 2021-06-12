@@ -33,14 +33,3 @@
        
      
 ## This Project is made during CICADA 3301 Hackathon.
-
-###  Description
-<img alt="Size" src="https://img.shields.io/github/repo-size/Harshpatel2222/Alumni-reinvited">
-
-
-
-### Contributors
-
-<a href="https://github.com/Harshpatel2222/Alumni-reinvited/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Harshpatel2222/Alumni-reinvited" />
-</a>
