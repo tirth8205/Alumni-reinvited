@@ -1,0 +1,154 @@
+{% extends 'web/base.html' %} {% block body %} {% load static %}
+<!-- Swiper -->
+<div class="swiper-container">
+
+    <!--Swiper-->
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="image img1" style="background-image: url('{% static 'images/img1.jpg' %}');">
+                <div class="content-container">
+                    <div class="section-title">
+                        <h1>"An investment in knowledge always pays the best interest."</h1>
+                    </div>
+                    <div class="section-sub-title">
+                        Benjamin Franklin, a Founding Father of the United States of America
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="image img2" style="background-image: url('{% static 'images/img2.jpg' %}');">
+                <div class="content-container">
+                    <div class="section-title">
+                        <h1>"The aim of the college, for the individual student, is to eliminate the need in his life for the college; the task is to help him become a self-educating man."</h1>
+                    </div>
+                    <div class="section-sub-title">George Horace Lorimer, American journalist/author
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="swiper-slide">
+            <div class="image img3" style="background-image: url('{% static 'images/img3.jpg' %}');">
+                <div class="content-container">
+                    <div class="section-title">
+                        <h1>“Some people get an education without going to college. The rest get it after they get out.”</h1>
+                    </div>
+                    <div class="section-sub-title">
+                        Mark Twain, American author
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="swiper-slide">
+            <div class="image img4" style="background-image: url('{% static 'images/img4.jpg' %}');">
+                <div class="content-container">
+                    <div class="section-title">
+                        <h1>I think the Success of any school can be measured by the contribution the alumni make to our national life.</h1>
+                    </div>
+                    <div class="section-sub-title">
+                        Jhon F. kennedy
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="swiper-slide">
+            <div class="image img5" style="background-image: url('{% static 'images/img5.jpg' %}');">
+                <div class="content-container">
+                    <div class="section-title">
+                        <h1>Any institutions' alumni are key to its growth. We are focused on giving a global experience to our students.</h1>
+                    </div>
+                    <div class="section-sub-title">
+                        Shiv Nadar
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+
+<div class="about" id="about">
+    <div class="container">
+        <h1>About Us</h1>
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <p>The idea behind this website is to create a common platform for all the students (Alumni & Current Students) of the university. The current students can get in touch with their seniors (Alumni) to discuss various things and their concerns
+                    and at the same time e.g., if any alumni want to share about his startup to all the students, he can directly be in touch with all the students of his/her university. The platform keeps and shows the records of all the students along
+                    with preliminary information such as their links to various social media platforms, their basic information about their academia, and some other relevant information. Various other features such as Jobs/Internship opportunities, Events,
+                    and various other things will also be shown. Our mission is to increase comunication network in between Freshers and other students to help them develop better career.</p>
+            </div>
+        </div>
+
+        <div class="row counters">
+            <div class="col-3">
+                <i class="fa fa-user"></i>
+                <div class="counters-text">
+                    <h2 data-toggle="counter-up">100</h2>
+                    <p>Students</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-users"></i>
+                <div class="counters-text">
+                    <h2 data-toggle="counter-up">200</h2>
+                    <p>Alumni</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-check"></i>
+                <div class="counters-text">
+                    <h2 data-toggle="counter-up">50</h2>
+                    <p>Evenets Completed</p>
+                </div>
+            </div>
+
+
+            <div class="col-3">
+                <i class="fa fa-running"></i>
+                <div class="counters-text">
+                    <h2 data-toggle="counter-up">20</h2>
+                    <p>Jobs Forecasted </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        speed: 1000,
+        direction: 'horizontal',
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        autoplay: {
+            delay: 5000,
+        },
+    });
+</script>
+
+{% endblock body %}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <title>Alumini Reinvited</title>
+
+
+
+
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+
+    <!-- swipper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+
+
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a href="{% url 'home_view' %}" class="navbar-brand">Alumni Reinvited</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="{% url 'home_view' %}" class="nav-item nav-link active">Home</a>
+                    <a href="{% url 'profile_view' %}" class="nav-item nav-link">Profile</a>
+                    <a href="{% url 'connections_view' %}" class="nav-item nav-link">Connections</a>
+                    <a href="{% url 'jobs_view' %}" class="nav-item nav-link">Jobs</a>
+                    <a href="{% url 'events_view' %}" class="nav-item nav-link">Events</a>
+                    <a href="{% url 'team_view' %}" class="nav-item nav-link">Team</a>
+                    <a href="{% url 'contact_view' %}" class="nav-item nav-link">Contact</a> {% if request.user.is_authenticated %}
+                    <a href="{% url 'logout' %}" class="nav-item nav-link">Logout</a> {% else %}
+                    <a href="{% url 'sign_view' %}" class="nav-item nav-link">Sign In/Sign Up</a> {% endif %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    {% block body %}{% endblock body %}
+
+
+    <!-- Footer Start -->
+    <div class="footer">
+        <h3>Alumni Reinvited</h3>
+        <a class="email" href="#">alumnireinvited@gmail.com</a>
+
+        <div class="container copyright">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy;2021 <a href="{% url 'home_view' %}">Alumni Reinvited</a>, All Right Reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <p>Made with &#10084; by <a href="{% url 'team_view' %}">Harsh, Tirth, Nirav</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+
+
+
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>

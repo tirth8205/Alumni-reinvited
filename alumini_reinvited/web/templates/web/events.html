@@ -1,0 +1,117 @@
+{% extends 'web/base.html' %} {% block body %} {% load static %}
+
+
+<!-- Blog Start -->
+<div class="blog blog-page mt-125">
+    <div class="container">
+        <div class="section-header">
+            <h2>Upcomig Events</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="{% static 'images/event-1.jpg' %}" alt="Blog">
+                    </div>
+                    <div class="blog-content">
+                        <h2 class="blog-title">Codeventure</h2>
+                        <div class="blog-meta">
+                            <i class="fa fa-list-alt"></i>
+                            <a href=""> Coding</a>
+                            <i class="fa fa-calendar-alt"></i>
+                            <p>28-May-2021</p>
+                        </div>
+                        <div class="blog-text">
+                            <p>
+                                Do you have a knack for competitive programming and logical analysis? Then this is the ideal event for you! Not only will your coding skills be put to test by eccentric questions, but a potpourri of Debug the Code and Code Quest questions will always
+                                keep you on your toes.This is a chance for you to go head to head with some of the best analytical brains of the country and prove your algorithmic prowess. "Win Cash Price worth 22K"
+                            </p>
+                            <a class="btn" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="{% static 'images/event-3.jpg' %}" alt="Blog">
+                    </div>
+                    <div class="blog-content">
+                        <h2 class="blog-title">ML/AI Quiz</h2>
+                        <div class="blog-meta">
+                            <i class="fa fa-list-alt"></i>
+                            <a href="">Quiz</a>
+                            <i class="fa fa-calendar-alt"></i>
+                            <p>14-Jul-2022</p>
+                        </div>
+                        <div class="blog-text">
+                            <p>
+                                Machine learning is a subset of AI which allows a machine to automatically learn from past data without programming explicitly. ... The goal of ML is to allow machines to learn from data so that they can give accurate output. In AI, we make intelligent
+                                systems to perform any task like a human.
+                            </p>
+                            <a class="btn" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="{% static 'images/event-4.jpg' %}" alt="Blog">
+                    </div>
+                    <div class="blog-content">
+                        <h2 class="blog-title">Iot Workshop</h2>
+                        <div class="blog-meta">
+                            <i class="fa fa-list-alt"></i>
+                            <a href="">Flagship Event</a>
+                            <i class="fa fa-calendar-alt"></i>
+                            <p>01-Jun-2021</p>
+                        </div>
+                        <div class="blog-text">
+                            <p>
+                                Internet of Things (IoT) finds its application in industries that prefers automation, energy efficient systems, smart devices etc. Even reports state that more than 50 Billion devices will be connected with IoT by 2020.
+                            </p>
+                            <a class="btn" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="{% static 'images/Event-2.png' %}" alt="Blog">
+                    </div>
+                    <div class="blog-content">
+                        <h2 class="blog-title">CICADA 3301 : REINVENTED </h2>
+                        <div class="blog-meta">
+                            <i class="fa fa-list-alt"></i>
+                            <a href="">Hackathon</a>
+                            <i class="fa fa-calendar-alt"></i>
+                            <p>30-May-2021</p>
+                        </div>
+                        <div class="blog-text">
+                            <p>
+                                Cicada 3301: Reinvented is a 36 hours long virtual hackathon from May 28-30, 2021, organized by MSTC, DAIICT and IEEE MTT-S DAIICT, where you can design, code and create solutions to real-life problems.
+                            </p>
+                            <a class="btn" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+
+{% endblock body %}
